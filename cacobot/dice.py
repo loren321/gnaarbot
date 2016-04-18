@@ -64,6 +64,17 @@ async def choice(message, client, *args, **kwargs):
         await client.send_message(message.channel, ':no_entry_sign: {}: You have provided no choices'.format(message.author.mention))
 
 @base.cacofunc
+async def dickroll(message, client, *args, **kwargs):
+    '''
+    **{0}dickroll**
+    Randomly choses "click" or "dick" with 6:1 ratio like in russian roulette.
+    *Example: `{0}choice CacoBot is Life; CacoBot is Love`*
+    '''
+
+    choices = ["click", "click", "click", "click", "click", "dick"]
+    await client.send_message(message.channel, '{}: {}'.format(message.author.mention, random.choice(choices).strip()))
+
+@base.cacofunc
 async def later(message, client, *args, **kwargs):
     '''
     **{0}later**
