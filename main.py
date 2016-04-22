@@ -136,7 +136,7 @@ async def on_error(*args):
                             sys.exc_info()[0].__name__)
                         )
 
-client.run(config['email'], config['password'])
+client.run(config['token'])
 
 # Here's the old manual-loop way of starting the bot.
 
