@@ -123,7 +123,7 @@ async def stats(message, client):
     with open('tmp.svg', 'w') as data:
         data.write(result)
 
-    subprocess.check_call(['inkscape', '-z', 'tmp.svg', '-e', 'tmp.png'])
+    subprocess.check_call(['convert', 'tmp.svg', 'tmp.png'])
     await client.send_file(message.channel, 'tmp.png')
 
     '''
