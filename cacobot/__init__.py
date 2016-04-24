@@ -15,6 +15,7 @@ import cacobot.define as define
 import cacobot.moderation as moderation
 import cacobot.youtube as youtube
 import cacobot.helper as helper
+import cacobot.google as google
 
 #novelties
 import cacobot.dice as dice
