@@ -27,7 +27,7 @@ import cacobot.doom as doom
 import cacobot.undertale as undertale
 import cacobot.fandoms as fandoms
 import cacobot.dream as dream
-import cacobot.chan as chan
+#import cacobot.chan as chan
 import cacobot.jontron as jontron
 
 # If you're taking the senic tour of the code, you should check out
